@@ -1,7 +1,7 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
-	staticruntime "off"
+	staticruntime "On"
 	warnings "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -106,7 +106,9 @@ project "GLFW"
 		runtime "Debug"
 		symbols "on"
 		sanitize { "Address" }
-		flags { "NoRuntimeChecks", "NoIncrementalLink" }
+		runtimechecks "Off"   -- 关闭运行时检查，等价于原来的 NoRuntimeChecks
+		incrementallink "Off"   -- 关闭增量链接，等价于原来的 NoIncrementalLink
+
 
 	filter "configurations:Release"
 		runtime "Release"
