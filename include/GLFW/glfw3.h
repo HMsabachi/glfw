@@ -1,4 +1,4 @@
-/*************************************************************************
+﻿/*************************************************************************
  * GLFW 3.4 - www.glfw.org
  * A library for OpenGL, window and input
  *------------------------------------------------------------------------
@@ -925,7 +925,7 @@ extern "C" {
   *  Window has titlebar [window hint](@ref GLFW_TITLEBAR_hint) and
   *  [window attribute](@ref GLFW_TITLEBAR_attrib).
   * 
-  *  NOTE: Added by Hazel
+  *  NOTE: Added by Prism
   */
 #define GLFW_TITLEBAR               0x00C2000D
 
